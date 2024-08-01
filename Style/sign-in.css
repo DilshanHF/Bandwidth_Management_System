@@ -1,4 +1,4 @@
-#Sign-uo {
+#Sign-in {
     position: absolute;
     top: 35px;
     width: 34%;
@@ -21,14 +21,14 @@
     height: 62px;
     font-weight: bolder;
 }
-#Sign-Up {
+#Sign-In-btn {
     position: absolute;
     height: 39px;
     width: 287px;
     top: 526px;
     left: 75px;
 }
-.sign-up-img>img{
+.sign-in-img>img{
     height: 800px;
     width: 900px;
     border-radius: 35px;
@@ -62,7 +62,7 @@
     padding: -42px;
     margin: auto;
 }
-#Sign-Up:hover{
+#Sign-In-btn:hover{
     background-color: aqua;
 }
 .formInfo{

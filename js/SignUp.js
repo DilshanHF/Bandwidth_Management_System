@@ -1,10 +1,10 @@
 document.getElementById('Sign-Up').addEventListener('click', function() {
     const email = document.getElementById('email').value;
-    const Username = document.getElementById('Username').value;
+    const username = document.getElementById('Username').value; // Changed to lowercase 'u'
     const password = document.getElementById('password').value;
     const password1 = document.getElementById('password1').value;
 
-    if (validate(email, 'Email') && validate(Username, 'User Name') &&
+    if (validate(email, 'Email') && validate(username, 'User Name') &&
         validate(password, 'Password') && validate(password1, 'Confirm Password')) {
 
         if (password !== password1) {
@@ -14,7 +14,7 @@ document.getElementById('Sign-Up').addEventListener('click', function() {
             });
             return;
         }
-        const data = { email, username: Username, password };
+        const data = { email, username, password };
 
         fetch('http://localhost:3000/signup', {
             method: 'POST',
@@ -34,6 +34,7 @@ document.getElementById('Sign-Up').addEventListener('click', function() {
                     Swal.fire({
                         icon: 'error',
                         title: 'Sign Up Failed',
+                        text: data.message, // Add more info if available
                     });
                 }
             })
@@ -42,6 +43,7 @@ document.getElementById('Sign-Up').addEventListener('click', function() {
                 Swal.fire({
                     icon: 'error',
                     title: 'An error occurred',
+                    text: err.message // Add more error details if available
                 });
             });
     }
