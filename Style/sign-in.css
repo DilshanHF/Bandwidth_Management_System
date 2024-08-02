@@ -10,45 +10,45 @@
 .card {
     height: 600px;
     position: absolute;
-    width: 550px;
+    width: 450px;
 }
 
 .form-control{
     border: 2px solid #3a80e8;
-    width: 50%;
+    width: 60%;
 }
 .form-label {
-    height: 62px;
+    height: 52px;
     font-weight: bolder;
 }
 #Sign-In-btn {
     position: absolute;
     height: 39px;
     width: 287px;
-    top: 526px;
+    top: 400px;
     left: 75px;
 }
 .sign-in-img>img{
-    height: 800px;
-    width: 900px;
+    height: 650px;
+    width: 720px;
     border-radius: 35px;
-    left: 840px;
+    left: 700px;
     top: 0px;
     position: absolute;
     margin: auto;
 }
 #title{
-    left: 920px;
+    left: 800px;
     top: 65px;
     position: absolute;
     margin: auto;
     height: 400px;
-    width: 300px;
+    width: 350px;
     color: white;
 }
 #title h3{
     font-weight: bolder;
-    font-size: 60px;
+    font-size: 50px;
 }
 .formInfo>img{
     height: 100px;
