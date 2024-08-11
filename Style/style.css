@@ -1,165 +1,125 @@
-#SignUp {
-    position: absolute;
-    top: 35px;
-    width: 34%;
-    margin: 70px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
-.mb-3 {
-    margin-bottom: 15px;
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
 }
-.card {
-    height: 400px;
-    position: absolute;
-    width: 200px;
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 900px;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
 }
-.form-control{
-    border: 2px solid #3a80e8;
-    width: 20%;
+
+.form-container {
+    flex: 1;
+    padding: 40px 30px;
 }
-.form-label {
-    height: 50px;
-    font-weight: bolder;
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
 }
-#Sign-Up {
-    position: absolute;
-    height: 39px;
-    width: 287px;
-    top: 526px;
-    left: 75px;
+
+h2 {
+    margin-bottom: 20px;
 }
-.sign-up-img>img{
-    height: 600px;
-    width: 400px;
-    border-radius: 35px;
-    left: 500px;
-    top: 10px;
-    position: absolute;
-    margin: auto;
+
+form {
+    display: flex;
+    flex-direction: column;
 }
-#title{
-    left: 920px;
-    top: 65px;
-    position: absolute;
-    margin: auto;
-    height: 400px;
-    width: 300px;
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    padding: 15px;
+    background-color: #4CAF50;
     color: white;
-}
-#title h3{
-    font-weight: bolder;
-    font-size: 60px;
-}
-#Sign-Up:hover{
-    background-color: aqua;
-}
-.formInfo{
-    font-weight: bolder;
-
-}
-.formInfo:hover{
-    color: darkred;
-}
-.formInfo > img {
-    height: 50px;
-    width: 150px;
-    top: -80px;
-    position: absolute;
-    padding: -42px;
-    margin: auto;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
-    #SignUp {
-        position: static;
-        width: 80%;
-        margin: 30px auto;
-    }
-
-    .card {
-        width: 100%;
-        height: auto;
-        position: static;
-    }
-
-    .form-control {
-        width: 100%;
-    }
-
-    #Sign-Up {
-        width: 80%;
-        position: static;
-        top: auto;
-        left: auto;
-        margin: 20px auto;
-    }
-
-    .sign-up-img > img {
-        width: 100%;
-        height: auto;
-        position: static;
-        border-radius: 15px;
-    }
-
-    #title {
-        width: 100%;
-        position: static;
-        text-align: center;
-        margin-top: 20px;
-    }
-
-    #title h3 {
-        font-size: 36px;
-    }
+button:hover {
+    background-color: #45a049;
 }
 
-@media (min-width: 992px) {
-    #SignUp {
-        position: absolute;
-        top: 35px;
-        width: 34%;
-        margin: 70px;
+.login-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.login-link span {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.login-link a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.image-container {
+    flex: 1;
+    background: url('https://img.freepik.com/free-vector/blue-abstract-background_53876-99573.jpg?w=1380&t=st=1686765175~exp=1686765775~hmac=39c6a23c3ac30b203637b7a14280c7a7ec1ab82e330d2b843ce07a62b2a6ad62') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.image-text {
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    max-width: 300px;
+}
+
+.image-credit {
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .form-container, .image-container {
+        flex: 100%;
+        max-width: 100%;
     }
 
-    .card {
-        height: 616px;
-        position: absolute;
-        width: 717px;
-    }
-
-    .form-control {
-        width: 50%;
-    }
-
-    #Sign-Up {
-        position: absolute;
-        height: 39px;
-        width: 287px;
-        top: 526px;
-        left: 75px;
-    }
-
-    .sign-up-img > img {
-        height: 800px;
-        width: 900px;
-        border-radius: 35px;
-        left: 840px;
-        top: 0px;
-        position: absolute;
-        margin: auto;
-    }
-
-    #title {
-        left: 920px;
-        top: 65px;
-        position: absolute;
-        margin: auto;
-        height: 400px;
-        width: 300px;
-        color: white;
-    }
-
-    #title h3 {
-        font-weight: bolder;
-        font-size: 60px;
+    .image-container {
+        display: none;
     }
 }

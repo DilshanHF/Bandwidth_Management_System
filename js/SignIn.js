@@ -7,7 +7,7 @@ document.getElementById('Sign-In-btn').addEventListener('click', function(event)
         const data = { email, password };
 
         fetch('http://localhost:3000/login', {
-            method: 'POST',
+            method: 'GET',
             headers: {
                 'Content-Type': 'application/json'
             },
